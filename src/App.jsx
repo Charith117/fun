@@ -2,15 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
-
-
-  <header className="App-header">
-    {/* Other content */}
-    
-  </header>
-
-
-
   const [accepted, setAccepted] = useState(false);
   const [yesButtonCovered, setYesButtonCovered] = useState(false);
   const [buttonText, setButtonText] = useState('No');
@@ -43,37 +34,21 @@ function App() {
   };
 
   const handleNoClick = () => {
-     // Increase padding and font size for the Yes button
-     const newYesFontSize = `${parseFloat(yesButtonStyle.fontSize) + 2}rem`;
-     setYesButtonStyle({
-       ...yesButtonStyle,
-       fontSize: newYesFontSize
-     });
- 
-    //  // Decrease padding and font size for the No button
-    //  const newNoFontSize = `${parseFloat(noButtonStyle.fontSize) - 0.1}rem`;
-    //  setNoButtonStyle({
-    //    ...noButtonStyle,
-    //    fontSize: newNoFontSize
-    //  });
- 
-     // Decrease font size for the main text
-     const newMainTextSize = `${parseFloat(mainTextSize) - 0.2}rem`;
-     setMainTextSize(newMainTextSize);
- 
-     // Decrease font size for the sticker
-    // const newStickerSize = `${parseFloat(stickerSize) - 0.2}rem`;
-    // setStickerSize(newStickerSize);
+    const newYesFontSize = `${parseFloat(yesButtonStyle.fontSize) + 2}rem`;
+    setYesButtonStyle({
+      ...yesButtonStyle,
+      fontSize: newYesFontSize
+    });
+
+    const newMainTextSize = `${parseFloat(mainTextSize) - 0.2}rem`;
+    setMainTextSize(newMainTextSize);
 
     switch (buttonText) {
       case 'No':
-        // Change button text and style
         setButtonText('Are you sure');
-        // setNoButtonStyle({
-        //   display: 'none'
-        // });
         break;
-        case 'Are you sure':
+      // Other cases...
+      case 'Are you sure':
         setButtonText('Really sure???');
         break;
       case 'Really sure???':
@@ -129,10 +104,7 @@ function App() {
           setButtonText('Ok what ever:(');
           break;
   
-
-           
       default:
-        // If it reaches the end of the loop, display "Are you sure?" button
         setButtonText('Ok what ever:(');
         setYesButtonStyle({
           padding: '50vh 100vw',
@@ -140,10 +112,6 @@ function App() {
         });
         break;
     }
-
-    // // Decrease font size for the main text and sticker
-    // setMainTextSize('2rem');
-    // setStickerSize('2rem');
   };
 
   return (
@@ -158,11 +126,8 @@ function App() {
           </div>
         )}
         {(accepted || yesButtonCovered) && (
-
           <h1>Hooray! 🎉 See you on Valentine's Day! <br />❤️❤️😘🥰</h1>
-
         )}
-        
       </header>
     </div>
   );
