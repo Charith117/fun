@@ -6,7 +6,7 @@ function App() {
 
   <header className="App-header">
     {/* Other content */}
-    <img src="" alt="Description of the GIF" />
+    <img src="1.gif" alt="Description of the GIF" />
   </header>
 
 
