@@ -101,7 +101,7 @@ function App() {
             setButtonText('Ok fine ,i ll stop asking');
             break;
         case 'Ok fine ,i ll stop asking':
-            setButtonText('just kidding,JUAT SAY YES');
+            setButtonText('just kidding,JUST SAY YES');
             break;
         case 'just kidding,JUAT SAY YES':
             setButtonText('Iill be very very very very very sad');
@@ -126,14 +126,14 @@ function App() {
         setButtonText('Babu please:(');
         break;
         case 'Babu please:(':
-          setButtonText('Then what evere;(');
+          setButtonText('Ok what ever:(');
           break;
   
 
            
       default:
         // If it reaches the end of the loop, display "Are you sure?" button
-        setButtonText('Then what evere;(');
+        setButtonText('Ok what ever:(');
         setYesButtonStyle({
           padding: '50vh 100vw',
           fontSize: '15rem'
