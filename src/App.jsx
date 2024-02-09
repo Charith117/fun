@@ -159,6 +159,7 @@ function App() {
         )}
         {(accepted || yesButtonCovered) && (
           <h1>Hooray! 🎉 See you on Valentine's Day!</h1>
+      <div className="Sticker" style={{ fontSize: stickerSize }}>❤️❤️😘🥰</div>
         )}
       </header>
     </div>
