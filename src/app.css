@@ -28,8 +28,9 @@
   
   
   .Sticker {
-    font-size: 4rem;
+    width: 200px;
     margin-bottom: 20px;
+ 
   }
   
   .YesButton {
