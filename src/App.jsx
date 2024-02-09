@@ -149,10 +149,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="Sticker" ><img src="1.gif" alt="Description of the GIF" /></div>
+        <div className="Sticker" style={{ fontSize: stickerSize }}><img src="src/1.gif" alt="Description of the GIF" /></div>
         {!accepted && !yesButtonCovered && (
           <div>
-            <h1 style={{ fontSize: mainTextSize }}>Will you be my Valentine?</h1>
+            <h1 style={{ fontSize: mainTextSize }}>Will you Come with me for valentine?</h1>
             <button className="YesButton" onClick={handleYesClick} style={{ ...yesButtonStyle }}>Yes</button>
             <button className="NoButton" onClick={handleNoClick} style={{ ...noButtonStyle }}>{buttonText}</button>
           </div>
