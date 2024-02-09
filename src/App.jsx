@@ -62,8 +62,8 @@ function App() {
      setMainTextSize(newMainTextSize);
  
      // Decrease font size for the sticker
-     const newStickerSize = `${parseFloat(stickerSize) - 0.2}rem`;
-     setStickerSize(newStickerSize);
+    // const newStickerSize = `${parseFloat(stickerSize) - 0.2}rem`;
+    // setStickerSize(newStickerSize);
 
     switch (buttonText) {
       case 'No':
