@@ -149,10 +149,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="Sticker" style={{ fontSize: stickerSize }}>😘</div>
+        <div className="Sticker" style={{ fontSize: stickerSize }}>❤️</div>
         {!accepted && !yesButtonCovered && (
           <div>
-            <h1 style={{ fontSize: mainTextSize }}>Will you Come with me for valentine?</h1>
+            <h1 style={{ fontSize: mainTextSize }}>Will you be my Valentine Patner?</h1>
             <button className="YesButton" onClick={handleYesClick} style={{ ...yesButtonStyle }}>Yes</button>
             <button className="NoButton" onClick={handleNoClick} style={{ ...noButtonStyle }}>{buttonText}</button>
           </div>
