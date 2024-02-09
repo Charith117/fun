@@ -158,8 +158,10 @@ function App() {
           </div>
         )}
         {(accepted || yesButtonCovered) && (
-          <h1>Hooray! 🎉 See you on Valentine's Day!</h1>
+          <h1>Hooray! 🎉 See you on Valentine's Day! <br />❤️❤️😘🥰</h1>
+          
         )}
+        
       </header>
     </div>
   );
