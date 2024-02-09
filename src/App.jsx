@@ -149,7 +149,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="Sticker"  style={{ fontSize: stickerSize }} ><img src="./1.gif" alt="Description of the GIF" /></div>
+        <div className="Sticker"  style={{ fontSize: stickerSize }} ><img src="<img src="./src/1.gif" alt="Your GIF">
+" alt="Description of the GIF" /></div>
         {!accepted && !yesButtonCovered && (
           <div>
             <h1 style={{ fontSize: mainTextSize }}>Will you Come with me for valentine?</h1>
